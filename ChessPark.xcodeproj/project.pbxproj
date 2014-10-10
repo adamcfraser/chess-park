@@ -9,11 +9,25 @@
 /* Begin PBXBuildFile section */
 		6640731219D6247100803717 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6640731119D6247100803717 /* main.m */; };
 		6640731519D6247100803717 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6640731419D6247100803717 /* AppDelegate.m */; };
-		6640731819D6247100803717 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6640731719D6247100803717 /* ViewController.m */; };
 		6640731B19D6247100803717 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6640731919D6247100803717 /* Main.storyboard */; };
 		6640731D19D6247100803717 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6640731C19D6247100803717 /* Images.xcassets */; };
 		6640732019D6247100803717 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6640731E19D6247100803717 /* LaunchScreen.xib */; };
 		6640732C19D6247100803717 /* ChessParkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6640732B19D6247100803717 /* ChessParkTests.m */; };
+		66C85FA519DA02D50043032F /* MatchesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C85FA419DA02D50043032F /* MatchesViewController.m */; };
+		66C85FAB19DA04AA0043032F /* Match.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C85FAA19DA04AA0043032F /* Match.m */; };
+		66C85FB119DA17B10043032F /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C85FB019DA17B10043032F /* CouchbaseLite.framework */; };
+		66C85FB319DA77900043032F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C85FB219DA77900043032F /* Foundation.framework */; };
+		66C85FB519DA77D40043032F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C85FB419DA77D40043032F /* CFNetwork.framework */; };
+		66C85FB719DA77DE0043032F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C85FB619DA77DE0043032F /* Security.framework */; };
+		66C85FB919DA77E60043032F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C85FB819DA77E60043032F /* SystemConfiguration.framework */; };
+		66C85FBB19DA77F30043032F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C85FBA19DA77F30043032F /* libsqlite3.dylib */; };
+		66C85FBD19DA77FE0043032F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C85FBC19DA77FE0043032F /* libz.dylib */; };
+		66C85FBF19DA78130043032F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C85FBE19DA78130043032F /* UIKit.framework */; };
+		66C85FC119DA78240043032F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66C85FC019DA78240043032F /* CoreGraphics.framework */; };
+		66C85FC419DBB4E20043032F /* GridSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C85FC319DBB4E20043032F /* GridSquare.m */; };
+		66C85FC719DC42510043032F /* MatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C85FC619DC42510043032F /* MatchViewController.m */; };
+		66C85FCA19DCB58A0043032F /* UserProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C85FC919DCB58A0043032F /* UserProfile.m */; };
+		66C85FDB19DE78AA0043032F /* PendingMatchesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66C85FDA19DE78AA0043032F /* PendingMatchesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +46,33 @@
 		6640731119D6247100803717 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6640731319D6247100803717 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6640731419D6247100803717 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6640731619D6247100803717 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6640731719D6247100803717 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6640731A19D6247100803717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6640731C19D6247100803717 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6640731F19D6247100803717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6640732519D6247100803717 /* ChessParkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessParkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6640732A19D6247100803717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6640732B19D6247100803717 /* ChessParkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChessParkTests.m; sourceTree = "<group>"; };
+		66C85FA319DA02D50043032F /* MatchesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchesViewController.h; sourceTree = "<group>"; };
+		66C85FA419DA02D50043032F /* MatchesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchesViewController.m; sourceTree = "<group>"; };
+		66C85FA919DA04AA0043032F /* Match.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Match.h; path = Model/Match.h; sourceTree = "<group>"; };
+		66C85FAA19DA04AA0043032F /* Match.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Match.m; path = Model/Match.m; sourceTree = "<group>"; };
+		66C85FB019DA17B10043032F /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CouchbaseLite.framework; path = Frameworks/CouchbaseLite.framework; sourceTree = "<group>"; };
+		66C85FB219DA77900043032F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		66C85FB419DA77D40043032F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		66C85FB619DA77DE0043032F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		66C85FB819DA77E60043032F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		66C85FBA19DA77F30043032F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		66C85FBC19DA77FE0043032F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		66C85FBE19DA78130043032F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		66C85FC019DA78240043032F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		66C85FC219DBB4E20043032F /* GridSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridSquare.h; sourceTree = "<group>"; };
+		66C85FC319DBB4E20043032F /* GridSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridSquare.m; sourceTree = "<group>"; };
+		66C85FC519DC42510043032F /* MatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchViewController.h; sourceTree = "<group>"; };
+		66C85FC619DC42510043032F /* MatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchViewController.m; sourceTree = "<group>"; };
+		66C85FC819DCB58A0043032F /* UserProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserProfile.h; path = Model/UserProfile.h; sourceTree = "<group>"; };
+		66C85FC919DCB58A0043032F /* UserProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserProfile.m; path = Model/UserProfile.m; sourceTree = "<group>"; };
+		66C85FD919DE78AA0043032F /* PendingMatchesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PendingMatchesViewController.h; sourceTree = "<group>"; };
+		66C85FDA19DE78AA0043032F /* PendingMatchesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PendingMatchesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +80,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66C85FBD19DA77FE0043032F /* libz.dylib in Frameworks */,
+				66C85FBB19DA77F30043032F /* libsqlite3.dylib in Frameworks */,
+				66C85FB919DA77E60043032F /* SystemConfiguration.framework in Frameworks */,
+				66C85FB719DA77DE0043032F /* Security.framework in Frameworks */,
+				66C85FB519DA77D40043032F /* CFNetwork.framework in Frameworks */,
+				66C85FC119DA78240043032F /* CoreGraphics.framework in Frameworks */,
+				66C85FBF19DA78130043032F /* UIKit.framework in Frameworks */,
+				66C85FB119DA17B10043032F /* CouchbaseLite.framework in Frameworks */,
+				66C85FB319DA77900043032F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +107,7 @@
 			children = (
 				6640730E19D6247100803717 /* ChessPark */,
 				6640732819D6247100803717 /* ChessParkTests */,
+				66C85FAD19DA17070043032F /* Frameworks */,
 				6640730D19D6247100803717 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,14 +124,21 @@
 		6640730E19D6247100803717 /* ChessPark */ = {
 			isa = PBXGroup;
 			children = (
+				66C85FC219DBB4E20043032F /* GridSquare.h */,
+				66C85FC319DBB4E20043032F /* GridSquare.m */,
+				66C85FA319DA02D50043032F /* MatchesViewController.h */,
+				66C85FA419DA02D50043032F /* MatchesViewController.m */,
+				66C85FC519DC42510043032F /* MatchViewController.h */,
+				66C85FC619DC42510043032F /* MatchViewController.m */,
+				66C85FD919DE78AA0043032F /* PendingMatchesViewController.h */,
+				66C85FDA19DE78AA0043032F /* PendingMatchesViewController.m */,
 				6640731319D6247100803717 /* AppDelegate.h */,
 				6640731419D6247100803717 /* AppDelegate.m */,
-				6640731619D6247100803717 /* ViewController.h */,
-				6640731719D6247100803717 /* ViewController.m */,
 				6640731919D6247100803717 /* Main.storyboard */,
 				6640731C19D6247100803717 /* Images.xcassets */,
 				6640731E19D6247100803717 /* LaunchScreen.xib */,
 				6640730F19D6247100803717 /* Supporting Files */,
+				66C85FAC19DA04B80043032F /* Model */,
 			);
 			path = ChessPark;
 			sourceTree = "<group>";
@@ -117,6 +167,33 @@
 				6640732A19D6247100803717 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66C85FAC19DA04B80043032F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				66C85FA919DA04AA0043032F /* Match.h */,
+				66C85FAA19DA04AA0043032F /* Match.m */,
+				66C85FC819DCB58A0043032F /* UserProfile.h */,
+				66C85FC919DCB58A0043032F /* UserProfile.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		66C85FAD19DA17070043032F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66C85FC019DA78240043032F /* CoreGraphics.framework */,
+				66C85FBE19DA78130043032F /* UIKit.framework */,
+				66C85FBC19DA77FE0043032F /* libz.dylib */,
+				66C85FBA19DA77F30043032F /* libsqlite3.dylib */,
+				66C85FB819DA77E60043032F /* SystemConfiguration.framework */,
+				66C85FB619DA77DE0043032F /* Security.framework */,
+				66C85FB419DA77D40043032F /* CFNetwork.framework */,
+				66C85FB219DA77900043032F /* Foundation.framework */,
+				66C85FB019DA17B10043032F /* CouchbaseLite.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +245,7 @@
 				TargetAttributes = {
 					6640730B19D6247100803717 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 822L9FJXUG;
 					};
 					6640732419D6247100803717 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -219,8 +297,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6640731819D6247100803717 /* ViewController.m in Sources */,
+				66C85FCA19DCB58A0043032F /* UserProfile.m in Sources */,
+				66C85FDB19DE78AA0043032F /* PendingMatchesViewController.m in Sources */,
 				6640731519D6247100803717 /* AppDelegate.m in Sources */,
+				66C85FC419DBB4E20043032F /* GridSquare.m in Sources */,
+				66C85FC719DC42510043032F /* MatchViewController.m in Sources */,
+				66C85FA519DA02D50043032F /* MatchesViewController.m in Sources */,
+				66C85FAB19DA04AA0043032F /* Match.m in Sources */,
 				6640731219D6247100803717 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,7 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -333,7 +416,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -345,9 +428,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = ChessPark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -355,9 +446,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = ChessPark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -414,6 +513,7 @@
 				6640733119D6247100803717 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6640733219D6247100803717 /* Build configuration list for PBXNativeTarget "ChessParkTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +522,7 @@
 				6640733419D6247100803717 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
