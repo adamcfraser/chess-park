@@ -13,11 +13,12 @@
 #import "CouchbaseLite/CouchbaseLite.h"
 #import "CouchbaseLite/CBLDocument.h"
 #define kSyncProtocol @"http"
-//#define kSyncHost @"127.0.0.1"
+#define kSyncHost @"demo.mobile.couchbase.com"
 //#define kSyncHost @"10.17.55.218"
-#define kSyncHost @"10.0.1.6"
+//#define kSyncHost @"10.0.1.6"
 #define kSyncPort @"4984"
-#define kSyncURL kSyncProtocol @"://" kSyncHost @":" kSyncPort @"/chess-park"
+//#define kSyncURL kSyncProtocol @"://" kSyncHost @":" kSyncPort @"/chess-park"
+#define kSyncURL kSyncProtocol @"://" kSyncHost @"/chess-park"
 
 #define kDatabaseName @"chess-park"
 #define kCPUserName @"cpusername"
@@ -39,7 +40,6 @@
         exit(-1);
     }
     
-    
     // set up replication
     NSLog(@"Setting up replication to...%@", kSyncURL);
     
@@ -47,6 +47,9 @@
     push = [self.database createPushReplication: url];
     pull = [self.database createPullReplication: url];
     push.continuous = pull.continuous = YES;
+    
+    [pull setCustomProperties:@{@"websocket": @NO}];
+    [push setCustomProperties:@{@"websocket": @NO}];
     
     
     _username = [[NSUserDefaults standardUserDefaults] objectForKey: kCPUserName];
